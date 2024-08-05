@@ -1,2 +1,7 @@
-# Macroeconomic-ABM-
-Macroeconomic ABM that replicates the functioning of a real economy, aimed at analysing the effectiveness of the agent-based approach in capturing the effects of various economic policies. 
+# Macroeconomic-ABM
+This work presents Macroeconomic ABM that replicates the functioning of a real economy, aimed at analysing the effectiveness of the agent-based approach in capturing the effects of various economic policies. 
+
+## Goal
+The initial goal is to create a realistic model capable of mimicking patterns observed in the real world. The model should replicate trends seen in developed economies, particularly those in European countries. Therefore, key economic indicators such as GDP, unemployment rates, inflation, and wealth distribution resulted in the simulation, should align with the actual levels exhibited by real-world economies. Additionally, the model should demonstrate a certain level of organisation in relation to the functioning of the economy, resulting from the individual behaviours and interactions within the simulation.
+
+The second objective involves introducing economic shocks into the simulation to alter the dynamics and behaviour of individuals within the model. This approach aims to analyse the collective outcomes resulting from the introduction of a policy measure. As a result, the model is expected to react to these policy-driven shock by making the economy evolve from one state to another, thereby generating various responses in macroeconomic variables.  By doing this, the model will allow for the evaluation of the overall impact of these economic shocks.
