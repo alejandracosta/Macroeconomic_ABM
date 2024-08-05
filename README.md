@@ -7,33 +7,32 @@ The initial goal is to create a realistic model capable of mimicking patterns ob
 The second objective involves introducing economic shocks into the simulation to alter the dynamics and behaviour of individuals within the model. This approach aims to analyse the collective outcomes resulting from the introduction of a policy measure. As a result, the model is expected to react to these policy-driven shock by making the economy evolve from one state to another, thereby generating various responses in macroeconomic variables.  By doing this, the model will allow for the evaluation of the overall impact of these economic shocks.
 
 
-### 2. ABM Outline
+## 2. ABM Outline
 The ABM adopted in this work provides a model that is simple to use and interpret to examine macroeconomic outcomes. To achieve this, the structure of the ABM follows the bottom-up macroeconomic model developed by Delli Gatti et al (2011).
 
-#### 2.1	Environment
 
-2.1.1 Agents
+#### 2.1 Agents
 The model represents a closed economy populated with a limited number of agents belonging to three different classes according to their macroeconomic role: 
 •	Households: Agents representing the workers and consumers within the economy.
 •	Firms: Agents responsible for transforming labour into goods.
 •	Banks: Entities that provide liquidity to firms.
 
-2.1.2 Structure of each agent
+#### 2.2 Structure of each agent
 In this model, agents are endowed with a set of attributes, referred to as state variables. Given that individuals within a class have the same role in the economy, agents are assigned specific attributes and actions based on the class they belong to.
 
-2.1.3 Network
+#### 2.3 Network
 The interactions among the different classes of agents are organised within three types of markets. These markets are the Labour Market, the Goods Market and the Credit Market, where a specific set of actions occur in each of them.
 In the Labour Market firms calculate their labour needs based on their production levels, and households offer work in exchange for salary. The dynamics of this market involve firms posting job vacancies, adjusting wage offers in response to market conditions, and hiring workers. Alternatively, in the Goods Market households use part of their wealth to purchase goods, while firms set prices based on their production costs and market conditions. Lastly, the Credit Market is the place where firms in need of funding to perform their economic activity seek financial resources, whereas banks offer loans at different rates, in relation to the market conditions and financial capabilities of the firms applying for loans.
 
 
+## 3. ABM Implementation 
 
-#### 3. ABM Implementation 
-3.1 Methodology: MESA
+#### 3.1 Methodology: MESA
 The ABM developed in this work has been implemented using the Python programming language, specifically employing the Mesa library. This library is a Python framework for agent-based modelling that has been extensively used for analysing agent behaviour across various fields. 
 Mesa enables the definition of agent-based models by creating objects that represent agents interacting with one another and with their environment (Masad & Kazil, 2015). For this work, the main components used include the agent scheduler, which handles time components and stablishes the order of the interactions within the model; and the data collector, which collects and extracts specified model- and agent-level data each time the model is run.
 
-3.2 Parameters setting
+#### 3.2 Parameters setting
 The  initialization parameters introduced in the model are obtained from Delli Gatti’s work (2011) and others defined through calibration to ensure the model functions correctly. 
 
-3.3	Scaling down methodology
+#### 3.3	Scaling down methodology
 In order to achieve a manageable size for the simulation, real data from the Spanish economy in 2023 were scaled down to determine the number of each class of agents to be included in the model. The number of workers, corresponding to the total active population, and the number of active firms, were sourced from the Instituto Nacional de Estadística (INE). The list of financial entities was obtained from the Bank of Spain. After obtaining the data, a scaling factor of 1:50,000 was applied to the figures.
