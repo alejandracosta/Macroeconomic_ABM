@@ -1,5 +1,6 @@
 # Macroeconomic-ABM
 This work presents Macroeconomic ABM using the MESA library that replicates the functioning of a real economy, aimed at analysing the effectiveness of the agent-based approach in capturing the effects of various economic policies. 
+The complete code can be found in the ***ABM_Alejandra_Costa.ipynb*** file. The simulation results obtained are stored in the folder ***Figures***.
 
 ## 1. Goal
 The initial goal is to create a realistic model capable of mimicking patterns observed in the real world. The model should replicate trends seen in developed economies, particularly those in European countries. Therefore, key economic indicators such as GDP, unemployment rates, inflation, and wealth distribution resulted in the simulation, should align with the actual levels exhibited by real-world economies. Additionally, the model should demonstrate a certain level of organisation in relation to the functioning of the economy, resulting from the individual behaviours and interactions within the simulation.
@@ -33,6 +34,8 @@ Mesa enables the definition of agent-based models by creating objects that repre
 
 #### 3.2 Parameters setting
 The  initialization parameters introduced in the model are obtained from Delli Gatti’s work (2011) and others defined through calibration to ensure the model functions correctly. 
+
+
 
 #### 3.3	Scaling down methodology
 In order to achieve a manageable size for the simulation, real data from the Spanish economy in 2023 were scaled down to determine the number of each class of agents to be included in the model. The number of workers, corresponding to the total active population, and the number of active firms, were sourced from the Instituto Nacional de Estadística (INE). The list of financial entities was obtained from the Bank of Spain. After obtaining the data, a scaling factor of 1:50,000 was applied to the figures.
